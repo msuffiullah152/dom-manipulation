@@ -6,6 +6,7 @@ const randomizeBtn = document.getElementById("randomize");
 const submitBtn = document.getElementById("submit");
 const inputQuote = document.getElementById("poster-form-quote");
 const inputTitle = document.getElementById("poster-form-title");
+const inputimg = document.getElementById("poster-form-image");
 console.log(randomizeBtn);
 console.log(img);
 console.log(title);
@@ -77,6 +78,7 @@ const posters = [
 
     title.textContent=inputTitle.value;
     quote.textContent=inputQuote.value;
+    img.setAttribute("src",inputimg.value);
   }
 
 //Invoking the function when the button is clicked
